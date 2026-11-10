@@ -40,4 +40,4 @@
 40        return nums
 41
 42# Time:  O(n log n) -> log n levels, O(n) merge work per level
-43# Space: O(n) buffer + O(log n) recursion stack
+43# Space: O(n) buffer + O(log n) recursion   

@@ -11,9 +11,10 @@
 11        for num in nums[1:]:
 12            # Extend the previous subarray, or restart at `num`
 13            # (restart wins when current_sum is negative).
-14            current_sum = max(num, current_sum + num)
+14            current_sum = num if num > current_sum + num else current_sum +num
 15
 16            # Keep the best answer seen at any index.
-17            max_sum = max(max_sum, current_sum)
+17            max_sum = max_sum if max_sum > current_sum else current_sum
 18
-19        return max_sum
+19
+20        return max_sum

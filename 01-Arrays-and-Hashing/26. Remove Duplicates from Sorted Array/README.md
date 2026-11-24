@@ -51,5 +51,3 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 
 ---
-
-Error connecting to AI API: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.

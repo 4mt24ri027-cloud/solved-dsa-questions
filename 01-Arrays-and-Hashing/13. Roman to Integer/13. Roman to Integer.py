@@ -1,1 +1,23 @@
-            # Subtract if the current value is smaller than the previous value            # Otherwise, add it to the total            if curr_value < prev_value:                total -= curr_value            else:                total += curr_value        for char in reversed(s):            curr_value = roman_to_num[char]        # Traverse the Roman numeral string from right to left        prev_value = 0        total = 0        }            'D': 500,            'M': 1000            'X': 10,            'L': 50,            'C': 100,            'I': 1,            'V': 5,        # Mapping of Roman numerals to their integer values        roman_to_num = {
+class Solution:
+    def romanToInt(self, s: str) -> int:
+        roman_to_num = {
+            "I": 1,
+            "V": 5,
+            "X": 10,
+            "L": 50,
+            "C": 100,
+            "D": 500,
+            "M": 1000,
+        }
+
+        total = 0
+        previous_value = 0
+        for char in reversed(s):
+            current_value = roman_to_num[char]
+            if current_value < previous_value:
+                total -= current_value
+            else:
+                total += current_value
+            previous_value = current_value
+
+        return total

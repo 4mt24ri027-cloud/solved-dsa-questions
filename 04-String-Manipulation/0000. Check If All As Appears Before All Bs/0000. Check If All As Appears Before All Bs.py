@@ -1,1 +1,0 @@
-class Solution:    def checkString(self, s: str) -> bool:        # Time: O(n) - one pass, early exit on the first violation        # Space: O(1) - no extra storage        for i in range(len(s) - 1):            # 'b' directly followed by 'a' means a 'b' came before an 'a'            if s[i] > s[i + 1]:                return False        return True

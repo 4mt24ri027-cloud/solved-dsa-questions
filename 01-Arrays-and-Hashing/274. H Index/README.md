@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/h-index">0000. H Index</a></h2>
+<h2><a href="https://leetcode.com/problems/h-index">274. H Index</a></h2>
 
 <p>Given an array of integers <code>citations</code> where <code>citations[i]</code> is the number of citations a researcher received for their <code>i<sup>th</sup></code> paper, return <em>the researcher's h-index</em>.</p>
 
@@ -30,5 +30,3 @@ Since the researcher has 3 papers with at least 3 citations each and the remaini
 
 
 ---
-
-Error connecting to AI API: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.

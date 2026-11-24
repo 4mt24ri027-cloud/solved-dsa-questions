@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/powx-n">0000. Powx N</a></h2>
+<h2><a href="https://leetcode.com/problems/powx-n">50. Powx N</a></h2>
 
 <p>Implement <a href="http://www.cplusplus.com/reference/valarray/pow/" target="_blank">pow(x, n)</a>, which calculates <code>x</code> raised to the power <code>n</code> (i.e., <code>x<sup>n</sup></code>).</p>
 
@@ -35,5 +35,3 @@
 
 
 ---
-
-Error connecting to AI API: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.

@@ -1,1 +1,6 @@
-class Solution:    def findGCD(self, nums: list[int]) -> int:        a, b = min(nums), max(nums)        while b != 0:            a, b = b, a % b   # Euclid: gcd(a, b) == gcd(b, a % b), so keep shrinking             the pair            # r becomes the gcd because the last nonzero r divides the pair before it             # and every earlier step kept the gcd unchanged, so that last r equals             (r_prev = q*r + 0),            the gcd        return a              # the last nonzero r is now in a, so a is the gcd# Time:  O(n + log(min(nums)))# Space: O(1)
+class Solution:
+    def findGCD(self, nums: list[int]) -> int:
+        a, b = min(nums), max(nums)
+        while b:
+            a, b = b, a % b
+        return a

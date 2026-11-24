@@ -1,5 +1,5 @@
 class Solution:
-    def removeDuplicates(self, nums: List[int]) -> int:
+    def removeDuplicates(self, nums: list[int]) -> int:
         n = len(nums)
         pre = 0
         curr = 2

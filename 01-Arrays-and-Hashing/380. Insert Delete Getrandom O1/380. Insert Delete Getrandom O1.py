@@ -8,7 +8,7 @@ class RandomizedSet:
         self.values = []
 
     def insert(self, val: int) -> bool:
-        if val in self.values:
+        if val in self.val_index:
             return False
 
         self.val_index[val] = len(self.values)
@@ -16,7 +16,7 @@ class RandomizedSet:
         return True
 
     def remove(self, val: int) -> bool:
-        if val not in self.values:
+        if val not in self.val_index:
             return False
 
         index_remove = self.val_index[val]
